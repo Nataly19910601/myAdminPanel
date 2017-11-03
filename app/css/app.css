@@ -72,3 +72,17 @@ button{
     width: 80%;
     color: whitesmoke;
 }
+.users_table{
+    background-color: #7aba7b;
+    color: white;
+    border: #2130bb 1px solid;
+}
+.users_table th{
+    padding: 10px 20px;
+    border: #2130bb 1px solid;
+    background-color: #0055cc;
+}
+.users_table td{
+    padding: 10px 20px;
+    border: #2130bb 1px solid;
+}

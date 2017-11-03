@@ -1,6 +1,19 @@
 'use strict';
+var myAdminApp =angular.module('myAdminApp,[]');
+myAdminApp.controller('DefaultCtrl',function ($scope) {
 
-var myadminApp =angular.module('admin', ['admin.services','admin.filters'])
+    $scope.users =[
+        {name:alex,status:online},
+        {name:bevel,status:online},
+        {name:greg,status:offline},
+        {name:leo,status:online},
+        {name:jax,status:offline}];
+
+
+});
+
+
+/* var myadminApp =angular.module('admin', ['admin.services','admin.filters'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {template: 'template/index.html', controller: defaultCtrl})
@@ -9,22 +22,9 @@ var myadminApp =angular.module('admin', ['admin.services','admin.filters'])
             .otherwise({redirectTo: '/'});
     },
     ]);
+    */
+
 /* Controllers */
-
-
-
-myadminApp.controller('DefaultCtrl',[
-    '$scope','$http', '$location', 'Phone',
-    function($scope, $http, $location, Phone) {
-
-        Phone.query({phoneId: 'phones'}, function(data) {
-            $scope.phones = data;
-        });
-
-
-
-    }
-]);
 
 
 
