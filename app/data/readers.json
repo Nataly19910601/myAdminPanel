@@ -1,0 +1,43 @@
+[
+    {
+        "age": 26, 
+        "id": "1", 
+        "imageUrl": "img/users/reader_1.png", 
+        "name": "Tim Timik", 
+        "snippet": "",
+        "status": "online"
+    }, 
+    {
+        "age": 29, 
+        "id": "2", 
+        "imageUrl": "img/readers/reader_2.png", 
+        "name": "Serge Serious", 
+        "snippet": "",
+        "status": "online"
+    }, 
+    {
+        "age": 65, 
+        "id": "3", 
+        "imageUrl": "img/readers/reader_3.png", 
+        "name": "Viktor Viktorko", 
+        "snippet": "",
+        "status": "offline"
+    }, 
+    {
+        "age": 37, 
+        "id": "4", 
+        "imageUrl": "img/readers/reader_4.png", 
+        "name": "Poline Polik", 
+        "snippet": "",
+        "status": "online"
+    }, 
+    {
+        "age": 21, 
+        "id": "5", 
+        "imageUrl": "img/readers/reader_5.png", 
+        "name": "Vera Vektor", 
+        "snippet": "",
+        "status": "offline"
+    }
+   
+]

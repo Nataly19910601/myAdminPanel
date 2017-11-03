@@ -16,7 +16,7 @@
         "status": "online"
     }, 
     {
-        "age": 35, 
+        "age": 65, 
         "id": "3", 
         "imageUrl": "img/users/user_3.png", 
         "name": "Greg Gregorovich", 
@@ -24,7 +24,7 @@
         "status": "offline"
     }, 
     {
-        "age": 47, 
+        "age": 37, 
         "id": "4", 
         "imageUrl": "img/users/user_4.png", 
         "name": "Deil Deil", 

@@ -1,30 +1,63 @@
 'use strict';
-var myAdminApp =angular.module('myAdminApp,[]');
-myAdminApp.controller('DefaultCtrl',function ($scope) {
+var myAdminApp =angular.module('myAdminApp',['ngRoute']);
+myAdminApp.config(['$routeProvider',function($routeProvide){
+    $routeProvide
+        .when('/',{
+        templateUrl:'template/index.html',
+            controller:'DefaultCtrl'
+        })
+        .when('/diagrams',{
+            templateUrl:'template/diagrams.html',
+            controller:'DiagramsCtrl'
+        })
+        .when('/graphics',{
+            templateUrl:'template/graphics.html',
+            controller:'GraphicsCtrl'
+        })
+        .when('/readers',{
+            templateUrl:'template/index.html',
+            controller:'ReadersCtrl'
+        })
+        .when('/tables',{
+            templateUrl:'template/index.html',
+            controller:'DefaultCtrl'
+        })
+        .otherwise({
 
-    $scope.users =[
-        {name:alex,status:online},
-        {name:bevel,status:online},
-        {name:greg,status:offline},
-        {name:leo,status:online},
-        {name:jax,status:offline}];
+        redirectTo:'/'
+    });
+
+}]);
+
+myAdminApp.controller('DefaultCtrl',['$scope','$http','$location',function ($scope,$http,$location) {
+$scope.title="Пользователи";
+   $http.get('data/users.json').success(function (data,status,headers,config) {
+       $scope.users =data;
+   });
+
+}])
+
+    myAdminApp.controller('ReadersCtrl',['$scope','$http','$location',function ($scope,$http,$location) {
+        $scope.title="Подписчики";
+        $http.get('data/readers.json').success(function (data,status,headers,config) {
+            $scope.users =data;
+        });
+
+}])
+
+myAdminApp.controller('GraphicsCtrl',['$scope','$http','$location',function ($scope,$http,$location) {
+    $scope.title="Графики";
 
 
-});
+}])
+
+myAdminApp.controller('DiagramsCtrl',['$scope','$http','$location',function ($scope,$http,$location) {
+    $scope.title="Диаграммы";
 
 
-/* var myadminApp =angular.module('admin', ['admin.services','admin.filters'])
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider
-            .when('/', {template: 'template/index.html', controller: defaultCtrl})
-            .when('/tables', {template: 'template/tables.html', controller: NewCtrl})
-            .when('/diagrams/:id', {template: 'template/diagrams.html', controller: EditCtrl})
-            .otherwise({redirectTo: '/'});
-    },
-    ]);
-    */
+}])
 
-/* Controllers */
+
 
 
 
