@@ -1,0 +1,43 @@
+[
+    {
+        "age": 26, 
+        "id": "1", 
+        "imageUrl": "img/users/user_1.png", 
+        "name": "Alex Alexeev", 
+        "snippet": "",
+        "status": "online"
+    }, 
+    {
+        "age": 29, 
+        "id": "2", 
+        "imageUrl": "img/users/user_2.png", 
+        "name": "Bill Billov", 
+        "snippet": "",
+        "status": "online"
+    }, 
+    {
+        "age": 35, 
+        "id": "3", 
+        "imageUrl": "img/users/user_3.png", 
+        "name": "Greg Gregorovich", 
+        "snippet": "",
+        "status": "offline"
+    }, 
+    {
+        "age": 47, 
+        "id": "4", 
+        "imageUrl": "img/users/user_4.png", 
+        "name": "Deil Deil", 
+        "snippet": "",
+        "status": "online"
+    }, 
+    {
+        "age": 21, 
+        "id": "5", 
+        "imageUrl": "img/users/user_5.png", 
+        "name": "Lucy Lui", 
+        "snippet": "",
+        "status": "offline"
+    }
+   
+]

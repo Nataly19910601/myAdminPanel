@@ -1,53 +1,74 @@
-/* app css stylesheet */
+body{
+    max-width: 100%;
+    width: 100%;
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+    background-color: #f5e5be;
+    background: linear-gradient(to left, #f5e5be, #2f1f1a);
+
 }
+.my_container {
+    padding: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1450px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
 
-.menu:before {
-  content: "[";
 }
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+    width: 100%;
 
-.menu:after {
-  content: "]";
 }
-
-.menu > li {
-  display: inline;
+.header button{
+    margin-right: 25px;
 }
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.header img{
+    margin-right: 150px;
 }
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+button{
+    padding: 10px 40px;
+    background-color: #3cd925;
+    border-radius: 15px;
+    outline: none;
 }
+.my_content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
 
-#table-wrapper .tools {padding: 10px;}
-#table-wrapper .disable-item,
-#table-wrapper thead th {cursor: pointer;}
-#table-tools {padding: 0 10px;}
-#table-tools input {margin-bottom: 0;}
-#table-tools .clear {clear: both;}
-#table-tools .paginator-page {text-align: right; width: 60px;}
-#table-wrapper thead th {
-	padding-left: 20px;
-	background-image: url(../pic/sort-def.gif);
-	background-repeat: no-repeat;
-	background-position: center left;
+
 }
-#table-wrapper thead th.sort-asc {background-image: url(../pic/sort-asc.gif);}
-#table-wrapper thead th.sort-desc {background-image: url(../pic/sort-desc.gif);}
+.main_content{
+    flex: 1 1 1000px;
+    max-width: 1000px;
+    background-color: #f5e5be;
+    display: flex;
+    align-items: stretch;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 
-#table-wrapper .table tbody tr.selected:hover td,
-#table-wrapper .table tbody tr.selected:hover th {background: #e4f7ec;}
-.table-striped tbody tr.selected:nth-child(odd) td,
-.table-striped tbody tr.selected:nth-child(odd) th {background: #ebfaf2;}
-.table-striped tbody tr.selected:nth-child(even) td,
-.table-striped tbody tr.selected:nth-child(even) th {background: #f4fcf8;}
+}
+.sidebar{
+    padding: 100px 20px;
+    flex: 1 1 400px;
+    max-width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+}
+.sidebar button{
+    width: 80%;
+    color: whitesmoke;
+}
