@@ -3,68 +3,58 @@
 <head>
     <meta charset="utf-8">
     <title>my Admin</title>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+
 
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
 
 
 </head>
-<body ng-controller="DefaultCtrl">
+<body>
 <div class="my_container">
     <header class="header">
         <img src="img/logo.png">
-        <a href="/#/">Список пользователей</a>
-        <a href="/#/readers">Список подписчиков</a>
+        <a href="#/users">Список пользователей</a>
+        <a href="#/readers">Список подписчиков</a>
     </header>
     <div class="my_content">
-        <div class=main_content" >
-            <input type ="text" ng-model="doneAndFilter">
-            <table class="users_table">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Ava</th>
-                    <th><a href="#" ng-click="sort('name')">Name
-                        <i class="glyphicon" ng-class="{'glyphicon-chevron-up':isSortUp('name'),'glyphicon-chevron-down':isSortDown('name')}"></i>
-                    </a></th>
-                    <th>Status</th>
-                </tr>
-                </thead>
-                <tbody>
+        <div class=main_content">
 
-                <tr ng-repeat="user in users |filter:doneAndFilter |orderBy:sortField:reverse">
-                    <td>{{user.id}}</td>
-                    <td><img src="{{user.imageUrl}}" alt="{{user.name}}"></td>
-                    <td>{{user.name | uppercase}}</td>
-                    <td>{{user.status}}</td>
-                </tr>
-                </tbody>
-            </table>
-            <p>Количестов пользователей: {{(users|filter:doneAndFilter).length}}</p>
 
+      <div ng-view>
+
+      </div>
 
 
         </div>
         <aside class="sidebar">
-            <a href="/#/diagrams">Диаграмма</a>
-            <a href="/#/tables">В таблице</a>
-            <a href="/#/graphics">В графике</a>
+            <a href="#/diagrams">Диаграмма</a>
+            <a href="#/tables">В таблице</a>
+            <a href="#/graphics">В графике</a>
 
 
         </aside>
     </div>
     <footer></footer>
 </div>
-<script src="lib/angular/angular.js"></script>
-<script src="lib/angular/angular-resource.js"></script>
+
+
+<script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 
+
+
+
+<script src="js/filters.js"></script>
 <script src="js/app.js"></script>
 <script src="js/services.js"></script>
 <script src="js/controllers.js"></script>
-<script src="js/directives.js"></script>
+
+
+
 </body>
 </html>

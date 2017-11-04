@@ -2,8 +2,8 @@
     {
         "age": 26, 
         "id": "1", 
-        "imageUrl": "img/users/reader_1.png", 
-        "name": "Tim Timik", 
+        "imageUrl": "img/readers/reader_1.png", 
+        "name": "Tim Tom", 
         "snippet": "",
         "status": "online"
     }, 
@@ -19,7 +19,7 @@
         "age": 65, 
         "id": "3", 
         "imageUrl": "img/readers/reader_3.png", 
-        "name": "Viktor Viktorko", 
+        "name": "Viktor Versus", 
         "snippet": "",
         "status": "offline"
     }, 
@@ -27,7 +27,7 @@
         "age": 37, 
         "id": "4", 
         "imageUrl": "img/readers/reader_4.png", 
-        "name": "Poline Polik", 
+        "name": "Poll Polik", 
         "snippet": "",
         "status": "online"
     }, 

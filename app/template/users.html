@@ -1,0 +1,22 @@
+
+<h1>{{title}}</h1>
+
+<table class="users_table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Ава</th>
+        <th>Имя</th>
+        <th>Статус</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr ng-repeat="user in users">
+        <td>{{user.id}}</td>
+        <td><img src="{{user.imageUrl}}" alt="{{user.name}}"></td>
+        <td>{{user.name | uppercase}}</td>
+        <td>{{user.status}}</td>
+    </tr>
+    </tbody>
+</table>

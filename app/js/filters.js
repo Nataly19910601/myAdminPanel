@@ -1,14 +1,15 @@
 'use strict';
 
 /* Filters */
+/*
 angular.module('myAdminApp.filters', [])
 
 .filter('doneAndFilter',function (user) {
     return user.name && user.status === "online";
-});
+}); */
     /*Сортировка по убыванию и возрастанию*/
 
-
+/*
     $scope.sortField = undefined;
     $scope.reverse = false;
 
@@ -20,9 +21,11 @@ angular.module('myAdminApp.filters', [])
             $scope.reverse = false;
         }
     }
+*/
 
     /*Меняет иконку стрелки сортировки*/
 
+    /*
     $scope.isSortUp = function (fieldName) {
         return $scope.sortField === fieldName && !$scope.reverse;
     }
@@ -30,3 +33,4 @@ angular.module('myAdminApp.filters', [])
     $scope.isSortDown = function (fieldName) {
         return $scope.sortField === fieldName && $scope.reverse;
     }
+*/

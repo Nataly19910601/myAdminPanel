@@ -28,6 +28,8 @@ body{
 }
 .header a{
     margin-right: 25px;
+    border-radius: 0px;
+    background-color: #20cccc;
 }
 .header img{
     margin-right: 150px;
@@ -36,8 +38,18 @@ a{
     padding: 10px 40px;
     background-color: #3cd925;
     border-radius: 15px;
-    outline: none;
+    text-align: center;
+    border: #4f6d93 2px solid;
+    text-decoration: none;
+    color: white;
+
 }
+a:hover{
+    text-decoration: none;
+    background-color: #7aba7b;
+    color: white;
+}
+
 .my_content{
     display: flex;
     flex-flow: row wrap;
