@@ -33,6 +33,9 @@ myAdminApp.config(['$routeProvider',function($routeProvide){
 
 }]);
 
+
+
+/*Контроллеры*/
 myAdminApp.controller('DefaultCtrl',['$scope','$http','$location',function ($scope,$http,$location) {
 
 
@@ -68,8 +71,6 @@ myAdminApp.controller('DiagramsCtrl',['$scope','$http','$location',function ($sc
 
 
 }]);
-
-
 
 
 

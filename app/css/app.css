@@ -76,8 +76,8 @@ a:hover{
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border-right: 1px solid #04504d;
+    border-left: 1px solid #04504d;
 
 }
 .sidebar a{
@@ -98,4 +98,19 @@ a:hover{
 .users_table td{
     padding: 10px 20px;
     border: #2130bb 1px solid;
+}
+@media (max-width: 1000px) {
+    .sidebar{
+        max-width:200px;
+
+    }
+    .sidebar a{
+        max-width: 70%;
+    }
+    .main_content {
+        max-width:400px;
+    }
+}
+@media (max-width: 500px) {
+
 }
